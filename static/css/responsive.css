@@ -1,0 +1,65 @@
+/*Small-screen*/
+@media(max-width:640px){
+    /*style*/
+    html {
+         font-size: 10px;
+    }
+    header {
+        flex-direction: column;
+        height: min-content;
+        padding: 2%;
+        text-align: center;
+
+    }
+    .nav-option {
+        flex-direction: column;
+    }
+
+    .hamburger-btn {
+        display: inline-flex;
+    }
+    .hamburger-btn span{
+        display: block;
+        background-color: white;
+        height: 3px;
+        width: 30px;
+        margin: 6px auto;
+    }
+
+    /*Toggle Function*/
+    #checkbox:not(:checked) ~ .nav-option{
+        height: 0px;
+        overflow: hidden;
+    }
+
+    #chekbox:checked ~ .nav-option{
+        height: auto;
+        overflow: auto;
+    }
+
+}
+
+/*Medium-screen*/
+@media(min-width:641px) and (max-width: 1007px){
+    html {
+         font-size: 14px;
+    }
+    /*About me section*/
+    .about-section{
+        flex-direction: column;
+    }
+
+    .about-description-container {
+        width: 100%;
+    }
+
+    .about-image-container {
+        width:100%;
+        margin: 2rem 0px;
+    }
+
+    .about-image-container img {
+        width: 20%;
+    }
+
+}

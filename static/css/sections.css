@@ -1,0 +1,87 @@
+/*About sections*/
+.about-image-container {
+    width: 40%;
+}
+
+.about-image-container img {
+    width: 55%;
+}
+.about-description-container {
+    width: 70%;
+    padding: 3%;
+}
+
+.about-description-container p {
+    margin: 1rem 0px;
+    width: 80%;
+}
+
+.skills-list {
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 70%;
+    margin-top: 0.5rem;
+}
+
+.skills-label {
+    border-radius: 13px;
+    border: 3px solid;
+}
+
+.skills-container {
+}
+
+/*Projects Cards*/
+
+
+.projects-container {
+    width: 93.5%;
+    padding: 2rem;
+}
+
+
+.projects-cards {
+    width: 25rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.5rem;
+    border-radius: 1%;
+}
+
+.projects-cards img{
+    width: 100%;
+}
+
+.projects-list {
+    margin: 2rem 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+    width: 100%;
+}
+
+/*Contact Section*/
+
+.contact-section h2 {
+    padding: 1rem;
+    flex-direction: column;
+}
+
+.contact-section #emailForm {
+    padding: 0.5rem 2.5rem 2.5rem;
+    margin-top: 2.5rem;
+}
+
+.contact-section input,
+.contact-section textarea {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.contact-section p {
+  margin-bottom: 1rem;
+}
+

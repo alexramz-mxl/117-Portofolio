@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %}About me{% endblock title %}
+{% load static %}
+
+{% block content %}
+
+<section class="about-section center-row">
+    <div class="about-image-container center-row">
+        <img src="{% static './img/Me.jpg' %}" class="img">
+    </div>
+
+    <div class="about-description-container center-column">
+        <h1> Welcome to my portofolio </h1>
+        <h1>Full Stack <span style="color: var(--primary-color-100);">Developer Student</span></h1>
+        <h2>Alexis Pastrana</h2>
+
+        <p>In this course I have developed skills that have encouraged me to <em>grow</em> in many personal aspects, one of the most <strong>interesting</strong> parts is designing since it is possible to play with all the existing shapes and colors, I like the combination of colors.
+            Another <em>skill</em> I have discovered is animation that can be added to the site to make it more intuitive.</p>
+
+        <div class="skills-list center-column">
+            <h2>My <span style="color: white"><em>skills</em></span> as a Developer <img class="imggif" src="{% static './img/developeranimated.gif' %}"></h2>
+
+            <div class="skills-list center-row">
+                <label class="skills-label"><img src="{% static './img/icons/htmlcolor.png' %}" class="imageiconsk"></label>
+                <label class="skills-label"><img src="{% static './img/icons/csscolor.png' %}" class="imageiconsk"></label>
+                <label class="skills-label"><img src="{% static './img/icons/javascriptpng.png' %}" class="imageiconsk"></label>
+                <label class="skills-label"><img src="{% static './img/icons/reactcolor.png' %}" class="imageiconsk"></label>
+                <label class="skills-label"><img src="{% static './img/icons/pythoncolor.png' %}" class="imageiconsk"></label>
+                <label class="skills-label"><img src="{% static './img/icons/nodecolor.png' %}" class="imageiconsk"></label>
+                <label class="skills-label"><img src="{% static './img/icons/django-b&w.png' %}" class="imageiconsk"></label>
+                <label class="skills-label"><img src="{% static './img/icons/Flaskb&w.svg' %}" class="imageiconsk"></label>
+            </div>
+        </div>
+     </div>
+</section>
+
+{% endblock content %}

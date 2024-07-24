@@ -1,0 +1,97 @@
+:root {
+     --primary-color: #c9b180;
+     --primary-color-100: #7a907c; 
+     --primary-color-300: #2a6e78;
+
+     --secondary-color: #3b4058;
+     --secondary-color-600:#bed6ab;
+     --secondary-color-900: #4b1139;
+
+     --neutral-color: #fca483;
+
+     --background-color: #1b1b1b;
+
+     --surface-color: #606078;
+
+     --outfit-font:"Outfit", sans-serif;
+     --raleway-font: "Raleway", sans-serif;
+}
+
+.center-row{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.center-column{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
+
+html{
+     background-color: #000000;
+     font-size: 16px;
+}
+
+*{
+     font-family: var(--raleway-font);
+     margin: 0px;
+     padding: 0%;
+}
+
+/*REM - Relative to the root font size(HTML).
+PX - Absolute*/
+
+h1{
+     color: var(--primary-color-300);
+     text-transform: uppercase;
+     font-size: 2rem;
+}
+
+h2{
+     color: var(--secondary-color-600);
+     text-transform: uppercase;
+     font-size: 1.8rem;
+     letter-spacing: 0.06rem;
+}
+
+p{
+     color: var(--surface-color);
+     line-height: 1.5rem;
+     font-size: 1.1rem;
+     text-justify: auto;
+}
+
+.skills-label {
+     color: var(--secondary-color-600);
+     background-color: #606078;
+     text-transform: uppercase;
+     font-weight: 600;
+     padding: 0.8rem 1.5rem;
+     font-size: 1.1rem;
+}
+
+.img {
+     border: 5px solid;
+     color: #3b4058;
+     border-radius: 10px;
+}
+
+.imageicnhdr{
+     width: 72px;
+     height: 72px;
+     padding: 30%;
+}
+
+.imageiconsk{
+     width: 35px;
+}
+
+.imggif{
+     width: 23px;
+     border-radius: 5px;
+     border: 2px solid;
+     color: var(--secondary-color-600);
+}
