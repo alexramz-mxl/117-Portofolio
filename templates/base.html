@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="{% static '/css/sections.css' %}">
     <link rel="stylesheet" href="{% static '/css/responsive.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     <title>{% block title %}My Portofolio{% endblock title %}</title>
 </head>
 <body>
@@ -51,7 +52,35 @@
 
     {% endblock content %}
 
-    <h1>Footer</h1>
-    
+    <footer class="footer-section">
+        <div class="group-1">
+            <div class="box">
+                <figure>
+                    <a href="">
+                        <img src="{% static './img/developer-icon.png' %}">
+                    </a>
+                </figure>
+            </div>
+            
+            <div class="box">
+                <h2>About us</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, odit!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, repudiandae!</p>
+            </div>
+
+            <div class="box">
+                <h2>Follow us in social media</h2>
+                <div class="social-media">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+            <div class="group-2">
+                <small>&copy; 2024 <b>SDGKU</b> - All Rights Reserved.</small>
+            </div>
+    </footer>
 </body>
 </html>
