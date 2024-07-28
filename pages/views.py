@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .forms import ContactForm
 from django.core.mail import send_mail
 
@@ -17,6 +17,8 @@ def contact(request):
             message = form.cleaned_data['message']
             
             send_mail("Email from " + name, message, email_from,['sinzunza@sdgku.edu'])
+        
+            return redirect('about')
         
         else:
             print("Invalid form")   
